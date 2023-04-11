@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image_url: MyString
+  one_wiki_url: MyString
+  tolkien_wiki_url: MyString
+  pronunciation: MyString
+  gender: one
+  height: MyString
+  culture: one
+  spouse: MyString
+  mother: MyString
+  father: MyString
+  description: MyText
+
+two:
+  name: MyString
+  image_url: MyString
+  one_wiki_url: MyString
+  tolkien_wiki_url: MyString
+  pronunciation: MyString
+  gender: two
+  height: MyString
+  culture: two
+  spouse: MyString
+  mother: MyString
+  father: MyString
+  description: MyText

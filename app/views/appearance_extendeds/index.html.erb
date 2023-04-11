@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Appearance extendeds</h1>
+
+<div id="appearance_extendeds">
+  <% @appearance_extendeds.each do |appearance_extended| %>
+    <%= render appearance_extended %>
+    <p>
+      <%= link_to "Show this appearance extended", appearance_extended %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New appearance extended", new_appearance_extended_path %>

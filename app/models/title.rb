@@ -1,0 +1,3 @@
+class Title < ApplicationRecord
+  belongs_to :movie_character
+end

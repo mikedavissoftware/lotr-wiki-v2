@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @birth %>
+
+<div>
+  <%= link_to "Edit this birth", edit_birth_path(@birth) %> |
+  <%= link_to "Back to births", births_path %>
+
+  <%= button_to "Destroy this birth", @birth, method: :delete %>
+</div>

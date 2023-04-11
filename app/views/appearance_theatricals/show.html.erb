@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @appearance_theatrical %>
+
+<div>
+  <%= link_to "Edit this appearance theatrical", edit_appearance_theatrical_path(@appearance_theatrical) %> |
+  <%= link_to "Back to appearance theatricals", appearance_theatricals_path %>
+
+  <%= button_to "Destroy this appearance theatrical", @appearance_theatrical, method: :delete %>
+</div>

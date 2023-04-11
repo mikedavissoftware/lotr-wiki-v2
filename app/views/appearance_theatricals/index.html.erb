@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Appearance theatricals</h1>
+
+<div id="appearance_theatricals">
+  <% @appearance_theatricals.each do |appearance_theatrical| %>
+    <%= render appearance_theatrical %>
+    <p>
+      <%= link_to "Show this appearance theatrical", appearance_theatrical %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New appearance theatrical", new_appearance_theatrical_path %>

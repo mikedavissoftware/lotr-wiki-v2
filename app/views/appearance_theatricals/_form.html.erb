@@ -1,0 +1,42 @@
+<%= form_with(model: appearance_theatrical) do |form| %>
+  <% if appearance_theatrical.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(appearance_theatrical.errors.count, "error") %> prohibited this appearance_theatrical from being saved:</h2>
+
+      <ul>
+        <% appearance_theatrical.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :minute, style: "display: block" %>
+    <%= form.number_field :minute %>
+  </div>
+
+  <div>
+    <%= form.label :second, style: "display: block" %>
+    <%= form.number_field :second %>
+  </div>
+
+  <div>
+    <%= form.label :movie_id, style: "display: block" %>
+    <%= form.text_field :movie_id %>
+  </div>
+
+  <div>
+    <%= form.label :body %>
+    <%= form.rich_text_area :body %>
+  </div>
+
+  <div>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+  
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

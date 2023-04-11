@@ -1,0 +1,77 @@
+<%= form_with(model: movie_character) do |form| %>
+  <% if movie_character.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(movie_character.errors.count, "error") %> prohibited this movie_character from being saved:</h2>
+
+      <ul>
+        <% movie_character.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :image_url, style: "display: block" %>
+    <%= form.text_field :image_url %>
+  </div>
+
+  <div>
+    <%= form.label :one_wiki_url, style: "display: block" %>
+    <%= form.text_field :one_wiki_url %>
+  </div>
+
+  <div>
+    <%= form.label :tolkien_wiki_url, style: "display: block" %>
+    <%= form.text_field :tolkien_wiki_url %>
+  </div>
+
+  <div>
+    <%= form.label :pronunciation, style: "display: block" %>
+    <%= form.text_field :pronunciation %>
+  </div>
+
+  <div>
+    <%= form.label :gender_id, style: "display: block" %>
+    <%= form.text_field :gender_id %>
+  </div>
+
+  <div>
+    <%= form.label :height, style: "display: block" %>
+    <%= form.text_field :height %>
+  </div>
+
+  <div>
+    <%= form.label :culture_id, style: "display: block" %>
+    <%= form.text_field :culture_id %>
+  </div>
+
+  <div>
+    <%= form.label :spouse, style: "display: block" %>
+    <%= form.text_field :spouse %>
+  </div>
+
+  <div>
+    <%= form.label :mother, style: "display: block" %>
+    <%= form.text_field :mother %>
+  </div>
+
+  <div>
+    <%= form.label :father, style: "display: block" %>
+    <%= form.text_field :father %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

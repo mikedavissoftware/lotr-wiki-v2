@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @pronoun %>
+
+<div>
+  <%= link_to "Edit this pronoun", edit_pronoun_path(@pronoun) %> |
+  <%= link_to "Back to pronouns", pronouns_path %>
+
+  <%= button_to "Destroy this pronoun", @pronoun, method: :delete %>
+</div>

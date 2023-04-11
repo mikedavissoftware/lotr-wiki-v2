@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  release_year: 1
+  lengt_theatrical: 1
+  length_extended: 1
+  image_url: MyString
+  description: MyText
+  wikipedia: MyString
+
+two:
+  title: MyString
+  release_year: 1
+  lengt_theatrical: 1
+  length_extended: 1
+  image_url: MyString
+  description: MyText
+  wikipedia: MyString

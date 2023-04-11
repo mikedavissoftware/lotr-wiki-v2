@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pronouns</h1>
+
+<div id="pronouns">
+  <% @pronouns.each do |pronoun| %>
+    <%= render pronoun %>
+    <p>
+      <%= link_to "Show this pronoun", pronoun %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New pronoun", new_pronoun_path %>

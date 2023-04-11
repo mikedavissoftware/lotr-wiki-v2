@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  era: one
+  movie_character: one
+
+two:
+  year: 1
+  era: two
+  movie_character: two

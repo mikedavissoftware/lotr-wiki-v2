@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @era %>
+
+<div>
+  <%= link_to "Edit this era", edit_era_path(@era) %> |
+  <%= link_to "Back to eras", eras_path %>
+
+  <%= button_to "Destroy this era", @era, method: :delete %>
+</div>

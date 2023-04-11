@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @death %>
+
+<div>
+  <%= link_to "Edit this death", edit_death_path(@death) %> |
+  <%= link_to "Back to deaths", deaths_path %>
+
+  <%= button_to "Destroy this death", @death, method: :delete %>
+</div>

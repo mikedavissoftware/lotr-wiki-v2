@@ -1,0 +1,32 @@
+<%= form_with(model: birth) do |form| %>
+  <% if birth.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(birth.errors.count, "error") %> prohibited this birth from being saved:</h2>
+
+      <ul>
+        <% birth.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :era_id, style: "display: block" %>
+    <%= form.text_field :era_id %>
+  </div>
+
+  <div>
+    <%= form.label :movie_character_id, style: "display: block" %>
+    <%= form.text_field :movie_character_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

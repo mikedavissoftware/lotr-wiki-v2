@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @appearance_extended %>
+
+<div>
+  <%= link_to "Edit this appearance extended", edit_appearance_extended_path(@appearance_extended) %> |
+  <%= link_to "Back to appearance extendeds", appearance_extendeds_path %>
+
+  <%= button_to "Destroy this appearance extended", @appearance_extended, method: :delete %>
+</div>

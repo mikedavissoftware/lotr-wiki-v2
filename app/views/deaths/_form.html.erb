@@ -1,0 +1,37 @@
+<%= form_with(model: death) do |form| %>
+  <% if death.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(death.errors.count, "error") %> prohibited this death from being saved:</h2>
+
+      <ul>
+        <% death.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :age, style: "display: block" %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :era_id, style: "display: block" %>
+    <%= form.text_field :era_id %>
+  </div>
+
+  <div>
+    <%= form.label :movie_character_id, style: "display: block" %>
+    <%= form.text_field :movie_character_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
